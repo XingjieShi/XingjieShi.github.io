@@ -59,14 +59,12 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title>发表论文</title>
+      <title>Publication</title>
       <link>/publication/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/publication/</guid>
-      <description> 2019  This is an R Markdown document. Markdown is a simple\(^\ast\) formatting syntax for authoring HTML, PDF, and MS Word documents. \(\underline{For}\) more details on using R Markdown see http://rmarkdown.rstudio.com. \(\underline{This\space sentence \space under \space lined using \LaTeX}\)
- one two
-   You can embed an R code chunk like this:   </description>
+      <description> </description>
     </item>
     
     <item>
@@ -112,15 +110,6 @@ Follow the following steps:
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/readme/</guid>
-      <description>XingjieShi.github.io </description>
     </item>
     
     <item>
