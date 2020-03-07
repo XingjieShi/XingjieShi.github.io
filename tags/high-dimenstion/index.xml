@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Xingjie Shi | 史兴杰</title>
-    <link>/categories/r/</link>
-    <description>Recent content in R on Xingjie Shi | 史兴杰</description>
+    <title>high dimenstion on Xingjie Shi | 史兴杰</title>
+    <link>/tags/high-dimenstion/</link>
+    <description>Recent content in high dimenstion on Xingjie Shi | 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/high-dimenstion/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [cite]. For jointly analysis multiple correlated outcomes, we developed the method vimco. Here we provide same demonstrations.
 Assume we have measured \(q\) responses \(y_1, \dots, y_q\) and the same set of \(p\) predictors on each individual \(x_1,\dots, x_p\).</description>
-    </item>
-    
-    <item>
-      <title>Publication</title>
-      <link>/publication/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/publication/</guid>
-      <description>史兴杰, 王赛旎, 李扬 (2020) 高维数据的稳健二分类方法, \(\underline{统计研究}\), 已接收
- X. Shi, S. Ma, Y. Huang (2020) Promoting sign consistency in the cure model estimation and selection. \(\underline{Statistical \space Methods \space in \space Medical \space Research}\). 29(1):15-28. Software.
- X. Shi, Y. Jiao, Y. Yang, Q. Cheng, C. Yang, X. Lin, J. Liu (2019) VIMCO: variational inference for multiple correlated outcomes in genome-wide association studies. \(\underline{Bioinformatics}\), 35(19): 3693-3700. R Package.</description>
     </item>
     
   </channel>

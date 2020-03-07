@@ -1,9 +1,10 @@
-baseURL = "http://example.com/"
+baseURL = "http://xingjie.org/"
 languageCode = "en-us"
-title = "Xingjie Shi"
+title = "Xingjie Shi ｜ 史兴杰"
 theme = "minimal"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-disqusShortname = "username" # delete this to disable disqus comments
+disqusShortname = "Xingjie" # delete this to disable disqus comments
+hasCJKLanguage: true
 googleAnalytics = ""
 
 [params]
@@ -13,7 +14,7 @@ googleAnalytics = ""
     accent = "red"
     showBorder = true
     backgroundColor = "white"
-    font = "Noto Serif SC" # should match the name on Google Fonts!
+    font =   "default" #"Noto Serif SC"  should match the name on Google Fonts!
     highlight = true
     highlightStyle = "default"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
