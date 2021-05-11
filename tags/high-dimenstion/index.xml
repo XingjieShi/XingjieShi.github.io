@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>high dimenstion on Xingjie Shi | 史兴杰</title>
-    <link>http://xingjie.org/tags/high-dimenstion/</link>
+    <link>/tags/high-dimenstion/</link>
     <description>Recent content in high dimenstion on Xingjie Shi | 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate>
     
-	<atom:link href="http://xingjie.org/tags/high-dimenstion/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/high-dimenstion/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Variational Inference for Multiple Outcomes</title>
-      <link>http://xingjie.org/post/2020-03-07-vimco/</link>
+      <link>/post/2020-03-07-vimco/</link>
       <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.org/post/2020-03-07-vimco/</guid>
+      <guid>/post/2020-03-07-vimco/</guid>
       <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [Rothman et al.,2010]. For jointly modeling multiple correlated outcomes, we have developed a statisitcal method in this paper. Here we provide same demonstrations for our method, which is implemented in the R package vimco.</description>
     </item>
     

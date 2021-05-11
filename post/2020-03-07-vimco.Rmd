@@ -1,0 +1,84 @@
+---
+title: "Variational Inference for Multiple Outcomes"
+author: "Xingjie Shi"
+date: 2020-03-07T17:13:14-05:00
+#categories: ["R"]
+tags: ["NSFC 71501089", "high dimenstion",  "linear regression", "EM"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Introduction 
+It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [[Rothman et al.,2010]](https://www.tandfonline.com/doi/abs/10.1198/jcgs.2010.09188). For jointly modeling multiple correlated outcomes, we have developed a statisitcal method in this [paper](https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext). Here we provide same demonstrations for our method, which is implemented in the R package [__vimco__](https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext).
+ 
+Assume we have measured $q$ responses $y_1, \dots, y_q$ and the same set of $p$ predictors on each individual $x_1,\dots, x_p$. Each response has its own regression model:
+$$y_j =  \mathbf X\beta_j + \varepsilon_j, ~ j=1, \dots, p,$$
+where $\beta_j$ is the regression vector for the $j$th response. We can formulate the multivariate multiple regression model as follows:
+$$\mathbf Y = \mathbf X \mathbf B + \mathbf E,$$
+where $\mathrm E(\mathbf E)=0$, and $\mathrm {Var}(\mathbf E)=\Sigma$.
+
+
+## Simulate high dimensional data
+You can simulate a simple example with following R code:
+
+```{r, fig.show='hold'}
+AR = function(rho, p) {
+    outer(1:p, 1:p, FUN = function(x, y) rho^(abs(x - y))) 
+}
+library(mvtnorm)
+n = 300  # sample size
+p = 400  # dimension of predictors
+K = 5    # dimension of outcomes
+set.seed(20132014)
+X   = rmvnorm(n, mean=rep(0, p))
+sigma.beta = rep(1, K)
+
+bet = matrix(0, nrow = p, ncol = K)
+lambda = 0.15    # proportion of non-zero entries in matrix \beta
+eta = rbinom(p, 1, lambda)
+alpha = 1
+gam = matrix(rbinom(p*K, 1, alpha), ncol=K)
+for (k in 1:K){
+  bet[, k] = rnorm(p, mean = 0, sd = sigma.beta[k]) * gam[,k] * eta 
+}
+  
+sigma = AR(0.8, K)
+lp  = X %*% bet
+sigma.e = diag(sqrt(diag(var(lp)))) %*% sigma %*% diag(sqrt(diag(var(lp))))
+err = rmvnorm(n, rep(0, K), sigma.e)
+Y   = lp + err
+print(round(cor(Y),2))
+```
+
+
+
+## Fit each outcome seperately
+```{r, fig.show='hold'}
+library(vimco)
+fit_Ind = emInd(X, Y)
+```
+
+## Fit all outcomes jointly
+```{r, fig.show='hold'}
+# initial values
+p = ncol(X)
+mu0     = fit_Ind$mu
+sigb0   = fit_Ind$sigb
+Theta0  = matrix(0, nrow=ncol(Y), ncol=ncol(Y))
+diag(Theta0)  =   1/c(fit_Ind$sige)
+Lambda0 = rep(1, p)
+Alpha0  = fit_Ind$Alpha 
+lambda0 = 1
+#fit_Mul = emMultiple(X, Y)
+fit_Mul = emMultiple(X, Y, mu0, sigb0, Theta0, Lambda0, Alpha0, TRUE) 
+```
+
+## Compare results
+```{r, fig.show='hold'}
+plot(bet, fit_Ind$Beta, xlab = "ture beta", ylab = "estimate", col=2)
+points(bet, fit_Mul$Beta, col=3)
+abline(0, 1, lwd=2, col=1)
+legend("topleft", c("jointly", "seperately"), pch=21, col=3:2)
+```

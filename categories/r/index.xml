@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Xingjie Shi | 史兴杰</title>
-    <link>http://xingjie.org/categories/r/</link>
+    <link>/categories/r/</link>
     <description>Recent content in R on Xingjie Shi | 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="http://xingjie.org/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Publication</title>
-      <link>http://xingjie.org/publication/</link>
+      <link>/publication/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.org/publication/</guid>
+      <guid>/publication/</guid>
       <description>Q. Cheng, T. Qiu, X. Chai, B. Sun, Y. Xia, X. Shi\(^\ast\), J. Liu\(^\ast\) (2021) MR-Corr\(^2\): a two-sample Mendelian randomization method that accounts for correlated horizontal pleiotropy using correlated instrumental variants. R Package X. Zhang, X. Liu, X. Shi\(^\ast\) (2021) Model Selection for Varying Coefficient Nonparametric Transformation Model. R package X. Shi, X. Chai, Y. Yang, Q. Cheng, Y. Jiao, H Chen, J. Huang, C. Yang, J. Liu J (2020)</description>
     </item>
     
     <item>
       <title>个人简介</title>
-      <link>http://xingjie.org/about/</link>
+      <link>/about/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.org/about/</guid>
+      <guid>/about/</guid>
       <description>史兴杰 南京财经大学，统计系副教授(校聘教授) 国际统计学会推选会士（ISI Elected member） 现场统计研究会环境与资源统计学会理事 研究方向：组学遗</description>
     </item>
     
