@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>css on 史兴杰</title>
-    <link>/tags/css/</link>
+    <link>http://xingjie.shi/tags/css/</link>
     <description>Recent content in css on 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xingjie.shi/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>grpFabs</title>
-      <link>/project/project2/</link>
+      <link>http://xingjie.shi/project/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project2/</guid>
+      <guid>http://xingjie.shi/project/project2/</guid>
       <description></description>
     </item>
     

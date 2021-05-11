@@ -3,168 +3,119 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/project/project1/</loc>
+    <loc>http://xingjie.shi/project/project1/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/project2/</loc>
+    <loc>http://xingjie.shi/project/project2/</loc>
   </url>
   
   <url>
-    <loc>/project/project3/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/project4/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
+    <loc>http://xingjie.shi/tags/em/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/em/</loc>
+    <loc>http://xingjie.shi/tags/high-dimenstion/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/high-dimenstion/</loc>
+    <loc>http://xingjie.shi/tags/linear-regression/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>http://xingjie.shi/tags/nsfc-71501089/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>http://xingjie.shi/post/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/regression/</loc>
+    <loc>http://xingjie.shi/tags/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://xingjie.shi/post/2020-03-07-vimco/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>http://xingjie.shi/</loc>
     <lastmod>2020-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
+    <loc>http://xingjie.shi/tags/adaptive-lasso/</loc>
+    <lastmod>2019-03-07T17:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>http://xingjie.shi/post/2019-03-15-fabs/</loc>
+    <lastmod>2019-03-07T17:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://xingjie.shi/tags/high-dimension/</loc>
+    <lastmod>2019-03-07T17:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://xingjie.shi/categories/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>http://xingjie.shi/publication/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://xingjie.shi/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/go/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://xingjie.shi/about/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/themes/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/goisforlovers/</loc>
+    <loc>http://xingjie.shi/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/development/</loc>
+    <loc>http://xingjie.shi/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/hugoisforlovers/</loc>
+    <loc>http://xingjie.shi/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>http://xingjie.shi/project/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/template/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>http://xingjie.shi/tags/css/</loc>
   </url>
   
   <url>
-    <loc>/tags/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <loc>http://xingjie.shi/tags/html/</loc>
   </url>
   
   <url>
-    <loc>/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/static-site-generator/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bootstrap/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/css/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/highlight-js/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/html/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/js/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/responsive/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/syntax-highlighting/</loc>
+    <loc>http://xingjie.shi/tags/js/</loc>
   </url>
   
 </urlset>

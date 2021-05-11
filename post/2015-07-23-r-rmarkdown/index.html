@@ -130,9 +130,9 @@
         
 <a href="/tags/high-dimenstion"><kbd class="item-tag">high dimenstion</kbd></a>
 
-<a href="/tags/em"><kbd class="item-tag">EM</kbd></a>
+<a href="/tags/linear-regression"><kbd class="item-tag">linear regression</kbd></a>
 
-<a href="/tags/regression"><kbd class="item-tag">regression</kbd></a>
+<a href="/tags/em"><kbd class="item-tag">EM</kbd></a>
 
 
     </div>
@@ -192,7 +192,8 @@ fit_Ind = emInd(X, Y)</code></pre>
 </div>
 <div id="fit-all-outcomes-jointly" class="section level2">
 <h2>Fit all outcomes jointly</h2>
-<pre class="r"><code>p = ncol(X)
+<pre class="r"><code># initial values
+p = ncol(X)
 mu0     = fit_Ind$mu
 sigb0   = fit_Ind$sigb
 Theta0  = matrix(0, nrow=ncol(Y), ncol=ncol(Y))
@@ -208,13 +209,37 @@ fit_Mul = emMultiple(X, Y, mu0, sigb0, Theta0, Lambda0, Alpha0, TRUE) </code></p
 <pre class="r"><code>plot(bet, fit_Ind$Beta, xlab = &quot;ture beta&quot;, ylab = &quot;estimate&quot;, col=2)
 points(bet, fit_Mul$Beta, col=3)
 abline(0, 1, lwd=2, col=1)
-legend(&quot;topleft&quot;, c(&quot;seperately&quot;, &quot;jointly&quot;), pch=21, col=2:3)</code></pre>
+legend(&quot;topleft&quot;, c(&quot;jointly&quot;, &quot;seperately&quot;), pch=21, col=3:2)</code></pre>
 <p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 </div>
 </div>
 
     
     
+    
+        <h4 class="page-header">Related</h4>
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2020-03-07-vimco/">Variational Inference for Multiple Outcomes</a></h4>
+    <h5>March 7, 2020</h5>
+    
+<a href="/tags/high-dimenstion"><kbd class="item-tag">high dimenstion</kbd></a>
+
+<a href="/tags/linear-regression"><kbd class="item-tag">linear regression</kbd></a>
+
+<a href="/tags/em"><kbd class="item-tag">EM</kbd></a>
+
+
+
+</div>
+ 
     
 
     

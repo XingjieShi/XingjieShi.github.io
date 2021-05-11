@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 史兴杰</title>
-    <link>/categories/</link>
+    <link>http://xingjie.shi/categories/</link>
     <description>Recent content in Categories on 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xingjie.shi/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
+      <link>http://xingjie.shi/categories/r/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/categories/r/</guid>
+      <guid>http://xingjie.shi/categories/r/</guid>
       <description></description>
     </item>
     

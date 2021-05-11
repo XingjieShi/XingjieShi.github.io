@@ -2,125 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>史兴杰</title>
-    <link>/</link>
+    <link>http://xingjie.shi/</link>
     <description>Recent content on 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xingjie.shi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VIMCO</title>
-      <link>/project/project1/</link>
+      <link>http://xingjie.shi/project/project1/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/project/project1/</guid>
+      <guid>http://xingjie.shi/project/project1/</guid>
       <description>this is project 1 section 2 </description>
     </item>
     
     <item>
       <title>grpFabs</title>
-      <link>/project/project2/</link>
+      <link>http://xingjie.shi/project/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Project 3</title>
-      <link>/project/project3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/project/project3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Project 4</title>
-      <link>/project/project4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/project/project4/</guid>
+      <guid>http://xingjie.shi/project/project2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Variational Inference for Multiple Outcomes</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>http://xingjie.shi/post/2020-03-07-vimco/</link>
       <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>http://xingjie.shi/post/2020-03-07-vimco/</guid>
+      <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [Rothman et al.,2010]. For jointly modeling multiple correlated outcomes, we have developed a statisitcal method in this paper. Here we provide same demonstrations for our method, which is implemented in the R package vimco.</description>
+    </item>
+    
+    <item>
+      <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
+      <link>http://xingjie.shi/post/2019-03-15-fabs/</link>
+      <pubDate>Thu, 07 Mar 2019 17:13:14 -0500</pubDate>
+      
+      <guid>http://xingjie.shi/post/2019-03-15-fabs/</guid>
       <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [cite]. For jointly modeling multiple correlated outcomes, we have developed the method vimco. Here we provide same demonstrations.
 Assume we have measured \(q\) responses \(y_1, \dots, y_q\) and the same set of \(p\) predictors on each individual \(x_1,\dots, x_p\).</description>
     </item>
     
     <item>
       <title>Publication</title>
-      <link>/publication/</link>
+      <link>http://xingjie.shi/publication/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/publication/</guid>
-      <description>史兴杰, 王赛旎 &amp;amp; 李扬 (2020) 高维数据的稳健二分类方法, \(\underline{统计研究}\), 已接收
+      <guid>http://xingjie.shi/publication/</guid>
+      <description>史兴杰, 王赛旎 &amp;amp; 李扬 (2020) 高维数据的稳健二分类方法, \(\underline{统计研究}\), 37(9): 95-105
  X. Shi, S. Ma, Y. Huang (2020) Promoting sign consistency in the cure model estimation and selection. \(\underline{Statistical \space Methods \space in \space Medical \space Research}\). 29(1):15-28. Software.
  X. Shi, Y. Jiao, Y. Yang, Q. Cheng, C. Yang, X. Lin, J. Liu (2019) VIMCO: variational inference for multiple correlated outcomes in genome-wide association studies. \(\underline{Bioinformatics}\), 35(19): 3693-3700. R Package.</description>
     </item>
     
     <item>
       <title>个人简介</title>
-      <link>/about/</link>
+      <link>http://xingjie.shi/about/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://xingjie.shi/about/</guid>
       <description>  
  史兴杰(单位主页) 南京财经大学，统计系副教授(校聘教授) 国际统计学会推选会士（ISI Elected member） 现场统计研究会环境与资源统计学会理事 研究方向：金融大数据、生物医学大数据 通讯地址：江苏省南京财经大学德经楼219 邮箱: shixingjie0615@gmail.com     div.blue { background-color:#E3AF63; border-radius: 5px; padding: 20px;}    2009.09 — 2014.06\(~~~~\) 上海财经大学\(~~~~~\) 统计学 博士(硕博连读)  2012.09 — 2014.04\(~~~~\) 耶鲁大学\(~~~~~\) 生物统计学 联合培养  2005.09 — 2009.06\(~~~~\) 南京审计学院\(~~~~~\) 数学与应用数学 本科     </description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate from Jekyll</title>
-      <link>/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>
