@@ -20,12 +20,14 @@ X. Zhang, X. Liu, __X. Shi$^\ast$__ (2021) Model Selection for Varying Coefficie
 #.
 __X. Shi__, X. Chai, Y. Yang, Q. Cheng, Y. Jiao, H Chen, J. Huang, C. Yang, J. Liu J (2020) [A tissue-specific collaborative mixed model for jointly analyzing multiple tissues in transcriptome-wide association studies](https://academic.oup.com/nar/article/48/19/e109/5911964). $\underline{Nucleic \space Acids \space Research}$. 48(19): e109. [R Package](https://github.com/XingjieShi/TisCoMM).
 
+#. 
+__X. Shi__, S. Ma, Y. Huang (2020) [Promoting sign consistency in the cure model estimation and selection](https://journals.sagepub.com/doi/abs/10.1177/0962280218820356?rfr_dat=cr_pub%3Dpubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&journalCode=smma). $\underline{Statistical \space Methods \space in \space Medical \space Research}$. 29(1):15-28. [Software](https://github.com/shuanggema/SCinCRM).
+
 #.
 __史兴杰__, 王赛旎 \& 李扬 (2020) [高维数据的稳健二分类方法](https://tjyj.stats.gov.cn/CN/10.19343/j.cnki.11-1302/c.2020.09.009), $\underline{统计研究}$, 37(9): 95-105
 
-
 #. 
-__X. Shi__, S. Ma, Y. Huang (2020) [Promoting sign consistency in the cure model estimation and selection](https://journals.sagepub.com/doi/abs/10.1177/0962280218820356?rfr_dat=cr_pub%3Dpubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&journalCode=smma). $\underline{Statistical \space Methods \space in \space Medical \space Research}$. 29(1):15-28. [Software](https://github.com/shuanggema/SCinCRM).
+Q. Cheng, Y. Yang, __X. Shi__, K. Yeung, C. Yang, H. Peng, J. Liu (2020) [MR-LDP: a two-sample Mendelian randomization for GWAS summary statistics accounting for linkage disequilibrium and horizontal pleiotropy](https://academic.oup.com/nargab/article/2/2/lqaa028/5828855?login=true#209720082). $\underline{NAR \space Genomics \space and \space Bioinformatics}$. 2(2): lqaa028. [R Package](https://github.com/QingCheng0218/MR.LDP)
 
 #. 
 __X. Shi__, Y. Jiao, Y. Yang, Q. Cheng, C. Yang, X. Lin, J. Liu (2019) [VIMCO: variational inference for multiple
