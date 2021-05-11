@@ -182,20 +182,23 @@ y &lt;- rexp(N, hx)
 tcens &lt;- rbinom(n = N, prob = 0.3, size = 1)  # censoring indicator
 status &lt;- 1-tcens 
 
+# Coordinate descent
 library(glmnet)
 ## Loading required package: Matrix
 ## Loaded glmnet 4.0-2
 library(survival)
 fit &lt;- glmnet(x, Surv(y, 1-status), family = &quot;cox&quot;)
 
-
+# Fabs
 group &lt;- 1:p
 library(GFabs)
-fit_fabs &lt;- GFabs(x, y, group, status, model = &quot;spr&quot;, iter = 200)
+fit_cox &lt;- GFabs(x, y, group, status, model = &quot;cox&quot;, iter = 200)
+fit_spr &lt;- GFabs(x, y, group, status, model = &quot;spr&quot;, iter = 200)
 
-par(mfrow = c(1, 2))
-plot(fit, main = &quot;Cox&quot;)
-matplot(t(fit_fabs$Beta), type = &quot;l&quot;, lty=1:p, main = &quot;SPR&quot;)</code></pre>
+par(mfrow = c(1, 3))
+plot(fit, main = &quot;Cox-CD&quot;)
+matplot(t(fit_cox$Beta), type = &quot;l&quot;, lty=1:p, main = &quot;Cox-Fabs&quot;)
+matplot(t(fit_spr$Beta), type = &quot;l&quot;, lty=1:p, main = &quot;SPR-Fabs&quot;)</code></pre>
 <p><img src="/post/2019-03-15-fabs_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 </div>
