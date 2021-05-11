@@ -17,9 +17,9 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>http://xingjie.shi/publication/</guid>
-      <description>史兴杰, 王赛旎 &amp;amp; 李扬 (2020) 高维数据的稳健二分类方法, \(\underline{统计研究}\), 37(9): 95-105
- X. Shi, S. Ma, Y. Huang (2020) Promoting sign consistency in the cure model estimation and selection. \(\underline{Statistical \space Methods \space in \space Medical \space Research}\). 29(1):15-28. Software.
- X. Shi, Y. Jiao, Y. Yang, Q. Cheng, C. Yang, X. Lin, J. Liu (2019) VIMCO: variational inference for multiple correlated outcomes in genome-wide association studies. \(\underline{Bioinformatics}\), 35(19): 3693-3700. R Package.</description>
+      <description>Q. Cheng, T. Qiu, X. Chai, B. Sun, Y. Xia, X. Shi\(^\ast\), J. Liu\(^\ast\) (2021) MR-Corr\(^2\): a two-sample Mendelian randomization method that accounts for correlated horizontal pleiotropy using correlated instrumental variants. R Package
+ X. Zhang, X. Liu, X. Shi\(^\ast\) (2021) Model Selection for Varying Coefficient Nonparametric Transformation Model. R package
+ X. Shi, X. Chai, Y. Yang, Q. Cheng, Y. Jiao, H Chen, J. Huang, C. Yang, J.</description>
     </item>
     
     <item>
