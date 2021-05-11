@@ -150,21 +150,53 @@
 <h2>Introduction</h2>
 <p>Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance tradeoff. The lasso is a popular tool for sparse regression, especially for problems in which the
 number of variables <span class="math inline">\(p\)</span> exceeds the number of observations <span class="math inline">\(n\)</span>.</p>
-<p>To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947318300549"><strong>Fabs</strong></a> based on the <a href="https://www.jmlr.org/papers/v8/zhao07a.html">BLasso</a>. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning <span class="math inline">\(\lambda\)</span>
+<p>To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947318300549"><strong>Fabs</strong></a>. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning <span class="math inline">\(\lambda\)</span>，
 <span class="math display">\[
 L(\beta) + \lambda \sum_j w_j|\beta_j|,
 \]</span>
-where <span class="math inline">\(w=(w_1, \dots, w_p)^\top\)</span> is a vector of prefixed weights.</p>
-<p>Here we provide same demonstrations.</p>
-<p>Assume we have measured <span class="math inline">\(q\)</span> responses <span class="math inline">\(y_1, \dots, y_q\)</span> and the same set of <span class="math inline">\(p\)</span> predictors on each individual <span class="math inline">\(x_1,\dots, x_p\)</span>. Each response has its own regression model:
-<span class="math display">\[h(y_i) =  x_i^\top\beta + \varepsilon_i, ~ i=1, \dots, n,\]</span>
-where <span class="math inline">\(\beta\)</span> is the regression vector.</p>
-</div>
-<div id="convex-loss-cox-model" class="section level2">
-<h2>Convex loss: Cox model</h2>
+where <span class="math inline">\(w=(w_1, \dots, w_p)^\top\)</span> is a vector of prefixed weights. Fabs can handle general loss functions, including both convex and nonconvex loss. It produces statistical garanteed solutions with asumptions:</p>
+<ul>
+<li><p><span class="math inline">\(L(\beta)\)</span> to be differentiable, and</p></li>
+<li><p><span class="math inline">\(\nabla^2 L\preceq M I\)</span>.</p></li>
+</ul>
+<p>Here we provide a numeric demonstration.</p>
 </div>
 <div id="nonconvex-loss-high-dimensional-smoothed-partial-rank-estimator" class="section level2">
 <h2>Nonconvex loss: high-dimensional smoothed partial rank estimator</h2>
+<p>The smoothed partial rank loss (Song et al. 2006) is an important nonconvex loss that not only includes the maximum rank loss (Han 1987) as its special case, but also accommodates general forms of censoring.</p>
+<p>Consider a random sample of size <span class="math inline">\(n\)</span>. Let <span class="math inline">\(T_i\)</span> be the outcome and <span class="math inline">\(C_i\)</span> be the censoring variable of individual <span class="math inline">\(i\)</span>. Let <span class="math inline">\(X_i=(x_{i1},\dots, x_{ip})^\top\)</span> be the vector of covariates and <span class="math inline">\(u_i\)</span> the exposure variable for individual <span class="math inline">\(i\)</span>.
+Suppose the exposure variable <span class="math inline">\(u\)</span> takes values in the interval <span class="math inline">\([a, b]\)</span> with <span class="math inline">\(a &lt; b\)</span>. The observed survival data consist of <span class="math inline">\((y_i, \delta_{i}, X_{i}, u_{i}), i = 1,2,\dots,n\)</span>, where <span class="math inline">\(y_i = \min\{T_i,C_i\}\)</span> and <span class="math inline">\(\delta_{i} = I(T_{i} \leq C_{i})\)</span>.</p>
+<p>The smoothed partial rank (SPR) loss citep{song2006} considered here is
+<span class="math display">\[ 
+L(\beta) = -\frac{1}{n(n-1)} \sum_{i \neq i&#39;}^n \delta_j I(y_i \geq y_{i&#39;}) S_{\sigma}(X_i^\top\beta - X_{i&#39;}^\top\beta), 
+\]</span></p>
+<pre class="r"><code>set.seed(20132014)
+N &lt;- 400
+p &lt;- 50
+nzc &lt;- p/10
+x &lt;- matrix(rnorm(N * p), N, p)
+beta = rnorm(nzc)
+fx &lt;- x[, seq(nzc)] %*% beta
+hx &lt;- exp(fx)
+y &lt;- rexp(N, hx)
+tcens &lt;- rbinom(n = N, prob = 0.3, size = 1)  # censoring indicator
+status &lt;- 1-tcens 
+
+library(glmnet)
+## Loading required package: Matrix
+## Loaded glmnet 4.0-2
+library(survival)
+fit &lt;- glmnet(x, Surv(y, 1-status), family = &quot;cox&quot;)
+
+
+group &lt;- 1:p
+library(GFabs)
+fit_fabs &lt;- GFabs(x, y, group, status, model = &quot;spr&quot;, iter = 200)
+
+par(mfrow = c(1, 2))
+plot(fit, main = &quot;Cox&quot;)
+matplot(t(fit_fabs$Beta), type = &quot;l&quot;, lty=1:p, main = &quot;SPR&quot;)</code></pre>
+<p><img src="/post/2019-03-15-fabs_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 </div>
 
