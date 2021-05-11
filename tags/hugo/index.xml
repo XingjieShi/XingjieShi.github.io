@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on 史兴杰</title>
-    <link>http://xingjie.shi/tags/hugo/</link>
-    <description>Recent content in hugo on 史兴杰</description>
+    <title>hugo on Xingjie Shi | 史兴杰</title>
+    <link>http://xingjie.org/tags/hugo/</link>
+    <description>Recent content in hugo on Xingjie Shi | 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://xingjie.shi/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xingjie.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VIMCO</title>
-      <link>http://xingjie.shi/project/project1/</link>
+      <link>http://xingjie.org/project/project1/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://xingjie.shi/project/project1/</guid>
+      <guid>http://xingjie.org/project/project1/</guid>
       <description>this is project 1 section 2 </description>
     </item>
     

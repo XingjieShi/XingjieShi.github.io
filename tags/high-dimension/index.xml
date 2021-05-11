@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>high dimension on 史兴杰</title>
-    <link>http://xingjie.shi/tags/high-dimension/</link>
-    <description>Recent content in high dimension on 史兴杰</description>
+    <title>high dimension on Xingjie Shi | 史兴杰</title>
+    <link>http://xingjie.org/tags/high-dimension/</link>
+    <description>Recent content in high dimension on Xingjie Shi | 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Mar 2019 17:13:14 -0500</lastBuildDate>
     
-	<atom:link href="http://xingjie.shi/tags/high-dimension/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xingjie.org/tags/high-dimension/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
-      <link>http://xingjie.shi/post/2019-03-15-fabs/</link>
+      <link>http://xingjie.org/post/2019-03-15-fabs/</link>
       <pubDate>Thu, 07 Mar 2019 17:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.shi/post/2019-03-15-fabs/</guid>
+      <guid>http://xingjie.org/post/2019-03-15-fabs/</guid>
       <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [cite]. For jointly modeling multiple correlated outcomes, we have developed the method vimco. Here we provide same demonstrations.
 Assume we have measured \(q\) responses \(y_1, \dots, y_q\) and the same set of \(p\) predictors on each individual \(x_1,\dots, x_p\).</description>
     </item>

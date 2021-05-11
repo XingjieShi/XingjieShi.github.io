@@ -1,72 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>史兴杰</title>
-    <link>http://xingjie.shi/</link>
-    <description>Recent content on 史兴杰</description>
+    <title>Xingjie Shi | 史兴杰</title>
+    <link>http://xingjie.org/</link>
+    <description>Recent content on Xingjie Shi | 史兴杰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate>
     
-	<atom:link href="http://xingjie.shi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xingjie.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VIMCO</title>
-      <link>http://xingjie.shi/project/project1/</link>
+      <link>http://xingjie.org/project/project1/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://xingjie.shi/project/project1/</guid>
+      <guid>http://xingjie.org/project/project1/</guid>
       <description>this is project 1 section 2 </description>
     </item>
     
     <item>
       <title>grpFabs</title>
-      <link>http://xingjie.shi/project/project2/</link>
+      <link>http://xingjie.org/project/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://xingjie.shi/project/project2/</guid>
+      <guid>http://xingjie.org/project/project2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Variational Inference for Multiple Outcomes</title>
-      <link>http://xingjie.shi/post/2020-03-07-vimco/</link>
+      <link>http://xingjie.org/post/2020-03-07-vimco/</link>
       <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.shi/post/2020-03-07-vimco/</guid>
+      <guid>http://xingjie.org/post/2020-03-07-vimco/</guid>
       <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [Rothman et al.,2010]. For jointly modeling multiple correlated outcomes, we have developed a statisitcal method in this paper. Here we provide same demonstrations for our method, which is implemented in the R package vimco.</description>
     </item>
     
     <item>
       <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
-      <link>http://xingjie.shi/post/2019-03-15-fabs/</link>
+      <link>http://xingjie.org/post/2019-03-15-fabs/</link>
       <pubDate>Thu, 07 Mar 2019 17:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.shi/post/2019-03-15-fabs/</guid>
+      <guid>http://xingjie.org/post/2019-03-15-fabs/</guid>
       <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [cite]. For jointly modeling multiple correlated outcomes, we have developed the method vimco. Here we provide same demonstrations.
 Assume we have measured \(q\) responses \(y_1, \dots, y_q\) and the same set of \(p\) predictors on each individual \(x_1,\dots, x_p\).</description>
     </item>
     
     <item>
       <title>Publication</title>
-      <link>http://xingjie.shi/publication/</link>
+      <link>http://xingjie.org/publication/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.shi/publication/</guid>
-      <description>Q. Cheng, T. Qiu, X. Chai, B. Sun, Y. Xia, X. Shi\(^\ast\), J. Liu\(^\ast\) (2021) MR-Corr\(^2\): a two-sample Mendelian randomization method that accounts for correlated horizontal pleiotropy using correlated instrumental variants. R Package
- X. Zhang, X. Liu, X. Shi\(^\ast\) (2021) Model Selection for Varying Coefficient Nonparametric Transformation Model. R package
- X. Shi, X. Chai, Y. Yang, Q. Cheng, Y. Jiao, H Chen, J. Huang, C. Yang, J.</description>
+      <guid>http://xingjie.org/publication/</guid>
+      <description>Q. Cheng, T. Qiu, X. Chai, B. Sun, Y. Xia, X. Shi\(^\ast\), J. Liu\(^\ast\) (2021) MR-Corr\(^2\): a two-sample Mendelian randomization method that accounts for correlated horizontal pleiotropy using correlated instrumental variants. R Package X. Zhang, X. Liu, X. Shi\(^\ast\) (2021) Model Selection for Varying Coefficient Nonparametric Transformation Model. R package X. Shi, X. Chai, Y. Yang, Q. Cheng, Y. Jiao, H Chen, J. Huang, C. Yang, J. Liu J (2020)</description>
     </item>
     
     <item>
       <title>个人简介</title>
-      <link>http://xingjie.shi/about/</link>
+      <link>http://xingjie.org/about/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://xingjie.shi/about/</guid>
-      <description>  
- 史兴杰 南京财经大学，统计系副教授(校聘教授) 国际统计学会推选会士（ISI Elected member） 现场统计研究会环境与资源统计学会理事 研究方向：组学遗传学统计建模、高维大数据统计计算、生存分析 通讯地址：江苏省南京财经大学德经楼219 邮箱: shixingjie0615@gmail.com     div.blue { background-color:#E3AF63; border-radius: 5px; padding: 20px;}    2009.09 — 2014.06\(~~~~\) 上海财经大学\(~~~~~\) 统计学 博士(硕博连读)  2012.09 — 2014.04\(~~~~\) 耶鲁大学\(~~~~~\) 生物统计学 联合培养  2005.09 — 2009.06\(~~~~\) 南京审计学院\(~~~~~\) 数学与应用数学 本科     </description>
+      <guid>http://xingjie.org/about/</guid>
+      <description>史兴杰 南京财经大学，统计系副教授(校聘教授) 国际统计学会推选会士（ISI Elected member） 现场统计研究会环境与资源统计学会理事 研究方向：组学遗</description>
     </item>
     
   </channel>
