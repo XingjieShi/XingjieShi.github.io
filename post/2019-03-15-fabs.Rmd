@@ -1,9 +1,12 @@
 ---
 title: "Fabs for Nonconvex Loss and Adaptive LASSO"
 author: "Xingjie Shi"
-date: 2019-03-07T17:13:14-05:00
-#categories: ["R"]
-tags: ["NSFC 71501089", "Fabs", "high dimension",  "adaptive LASSO"]
+date: '2019-03-07T17:13:14-05:00'
+tags:
+- NSFC 71501089
+- Fabs
+- high dimension
+- adaptive LASSO
 ---
 
 ```{r setup, include=FALSE}
@@ -11,12 +14,33 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 ## Introduction 
-It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [cite]. For jointly modeling multiple correlated outcomes, we have developed the method [__vimco__](https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext). Here we provide same demonstrations.
+Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance tradeoff. The lasso is a popular tool for sparse regression, especially for problems in which the
+number of variables $p$ exceeds the number of observations $n$.
+ 
+To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm [__Fabs__](https://www.sciencedirect.com/science/article/abs/pii/S0167947318300549) based on the [BLasso](https://www.jmlr.org/papers/v8/zhao07a.html). Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning $\lambda$
+$$
+L(\beta) + \lambda \sum_j w_j|\beta_j|,
+$$
+where $w=(w_1, \dots, w_p)^\top$ is a vector of prefixed weights.
+
+- $L(\beta)$ is differentiable
+
+- $\nabla^2 L\preceq M I$
+
+
+
+Here we provide same demonstrations.
  
 Assume we have measured $q$ responses $y_1, \dots, y_q$ and the same set of $p$ predictors on each individual $x_1,\dots, x_p$. Each response has its own regression model:
 $$h(y_i) =  x_i^\top\beta + \varepsilon_i, ~ i=1, \dots, n,$$
 where $\beta$ is the regression vector.  
 
+## Convex loss: Cox model
 
-## Simulate high dimensional data
+## Nonconvex loss: high-dimensional smoothed partial rank estimator
+
+
+
+
+ 
   

@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Variational Inference for Multiple Outcomes</title>
+        <title>Variational Inference for Multiple Outcomes in GWAS</title>
         
         <style>
 
@@ -85,7 +85,7 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">Variational Inference for Multiple Outcomes</a>
+                    <a class="navbar-brand visible-xs" href="#">Variational Inference for Multiple Outcomes in GWAS</a>
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -129,7 +129,7 @@
 <main>
 
     <div>
-        <h2>Variational Inference for Multiple Outcomes</h2>
+        <h2>Variational Inference for Multiple Outcomes in GWAS</h2>
         <h5>March 7, 2020</h5>
         
 <a href="/tags/nsfc-71501089"><kbd class="item-tag">NSFC 71501089</kbd></a>
@@ -148,7 +148,7 @@
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome <a href="https://www.tandfonline.com/doi/abs/10.1198/jcgs.2010.09188">[Rothman et al.,2010]</a>. For jointly modeling multiple correlated outcomes, we have developed a statisitcal method in this <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext">paper</a>. Here we provide same demonstrations for our method, which is implemented in the R package <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext"><strong>vimco</strong></a>.</p>
+<p>It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome <a href="https://www.tandfonline.com/doi/abs/10.1198/jcgs.2010.09188">[Rothman et al.,2010]</a>. For jointly modeling multiple correlated outcomes in GWAS, we have developed a statisitcal method in this <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext">paper</a>. Here we provide same demonstrations for our method, which is implemented in the R package <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext"><strong>vimco</strong></a>.</p>
 <p>Assume we have measured <span class="math inline">\(q\)</span> responses <span class="math inline">\(y_1, \dots, y_q\)</span> and the same set of <span class="math inline">\(p\)</span> predictors on each individual <span class="math inline">\(x_1,\dots, x_p\)</span>. Each response has its own regression model:
 <span class="math display">\[y_j =  \mathbf X\beta_j + \varepsilon_j, ~ j=1, \dots, p,\]</span>
 where <span class="math inline">\(\beta_j\)</span> is the regression vector for the <span class="math inline">\(j\)</span>th response. We can formulate the multivariate multiple regression model as follows:

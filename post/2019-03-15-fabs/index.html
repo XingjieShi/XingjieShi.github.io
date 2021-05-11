@@ -148,13 +148,23 @@
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [cite]. For jointly modeling multiple correlated outcomes, we have developed the method <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext"><strong>vimco</strong></a>. Here we provide same demonstrations.</p>
+<p>Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance tradeoff. The lasso is a popular tool for sparse regression, especially for problems in which the
+number of variables <span class="math inline">\(p\)</span> exceeds the number of observations <span class="math inline">\(n\)</span>.</p>
+<p>To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947318300549"><strong>Fabs</strong></a> based on the <a href="https://www.jmlr.org/papers/v8/zhao07a.html">BLasso</a>. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning <span class="math inline">\(\lambda\)</span>
+<span class="math display">\[
+L(\beta) + \lambda \sum_j w_j|\beta_j|,
+\]</span>
+where <span class="math inline">\(w=(w_1, \dots, w_p)^\top\)</span> is a vector of prefixed weights.</p>
+<p>Here we provide same demonstrations.</p>
 <p>Assume we have measured <span class="math inline">\(q\)</span> responses <span class="math inline">\(y_1, \dots, y_q\)</span> and the same set of <span class="math inline">\(p\)</span> predictors on each individual <span class="math inline">\(x_1,\dots, x_p\)</span>. Each response has its own regression model:
 <span class="math display">\[h(y_i) =  x_i^\top\beta + \varepsilon_i, ~ i=1, \dots, n,\]</span>
 where <span class="math inline">\(\beta\)</span> is the regression vector.</p>
 </div>
-<div id="simulate-high-dimensional-data" class="section level2">
-<h2>Simulate high dimensional data</h2>
+<div id="convex-loss-cox-model" class="section level2">
+<h2>Convex loss: Cox model</h2>
+</div>
+<div id="nonconvex-loss-high-dimensional-smoothed-partial-rank-estimator" class="section level2">
+<h2>Nonconvex loss: high-dimensional smoothed partial rank estimator</h2>
 </div>
 </div>
 
@@ -171,7 +181,7 @@ where <span class="math inline">\(\beta\)</span> is the regression vector.</p>
     
     
 
-    <h4><a href="/post/2020-03-07-vimco/">Variational Inference for Multiple Outcomes</a></h4>
+    <h4><a href="/post/2020-03-07-vimco/">Variational Inference for Multiple Outcomes in GWAS</a></h4>
     <h5>March 7, 2020</h5>
     
 <a href="/tags/nsfc-71501089"><kbd class="item-tag">NSFC 71501089</kbd></a>
