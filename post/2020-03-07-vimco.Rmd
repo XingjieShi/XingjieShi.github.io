@@ -3,7 +3,7 @@ title: "Variational Inference for Multiple Outcomes"
 author: "Xingjie Shi"
 date: 2020-03-07T17:13:14-05:00
 #categories: ["R"]
-tags: ["NSFC 71501089", "high dimenstion",  "linear regression", "EM"]
+tags: ["NSFC 71501089", "high dimenstion", "multiple traits", "GWAS"]
 ---
 
 ```{r setup, include=FALSE}

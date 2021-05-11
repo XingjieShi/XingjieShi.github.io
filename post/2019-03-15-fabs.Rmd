@@ -3,7 +3,7 @@ title: "Fabs for Nonconvex Loss and Adaptive LASSO"
 author: "Xingjie Shi"
 date: 2019-03-07T17:13:14-05:00
 #categories: ["R"]
-tags: ["NSFC 71501089", "high dimension",  "adaptive LASSO"]
+tags: ["NSFC 71501089", "Fabs", "high dimension",  "adaptive LASSO"]
 ---
 
 ```{r setup, include=FALSE}
@@ -19,42 +19,4 @@ where $\beta$ is the regression vector.
 
 
 ## Simulate high dimensional data
-You can simulate a simple example with following R code:
-
-```{r, fig.show='hold'}
-AR = function(rho, p) {
-    outer(1:p, 1:p, FUN = function(x, y) rho^(abs(x - y))) 
-}
-library(mvtnorm)
-n = 300  # sample size
-p = 400  # dimension of predictors
-K = 5    # dimension of outcomes
-set.seed(20132014)
-X   = rmvnorm(n, mean=rep(0, p))
-sigma.beta = rep(1, K)
-
-bet = matrix(0, nrow = p, ncol = K)
-lambda = 0.15    # proportion of non-zero entries in matrix \beta
-eta = rbinom(p, 1, lambda)
-alpha = 1
-gam = matrix(rbinom(p*K, 1, alpha), ncol=K)
-for (k in 1:K){
-  bet[, k] = rnorm(p, mean = 0, sd = sigma.beta[k]) * gam[,k] * eta 
-}
   
-sigma = AR(0.8, K)
-lp  = X %*% bet
-sigma.e = diag(sqrt(diag(var(lp)))) %*% sigma %*% diag(sqrt(diag(var(lp))))
-err = rmvnorm(n, rep(0, K), sigma.e)
-Y   = lp + err
-print(round(cor(Y),2))
-```
-
-
-
-## Fit each outcome seperately
-```{r, fig.show='hold'}
-library(vimco)
-fit_Ind = emInd(X, Y)
-```
- 

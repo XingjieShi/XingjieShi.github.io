@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>EM</title>
-      <link>/tags/em/</link>
+      <title>GWAS</title>
+      <link>/tags/gwas/</link>
       <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
       
-      <guid>/tags/em/</guid>
+      <guid>/tags/gwas/</guid>
       <description></description>
     </item>
     
@@ -30,11 +30,11 @@
     </item>
     
     <item>
-      <title>linear regression</title>
-      <link>/tags/linear-regression/</link>
+      <title>multiple traits</title>
+      <link>/tags/multiple-traits/</link>
       <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
       
-      <guid>/tags/linear-regression/</guid>
+      <guid>/tags/multiple-traits/</guid>
       <description></description>
     </item>
     
@@ -53,6 +53,15 @@
       <pubDate>Thu, 07 Mar 2019 17:13:14 -0500</pubDate>
       
       <guid>/tags/adaptive-lasso/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fabs</title>
+      <link>/tags/fabs/</link>
+      <pubDate>Thu, 07 Mar 2019 17:13:14 -0500</pubDate>
+      
+      <guid>/tags/fabs/</guid>
       <description></description>
     </item>
     
