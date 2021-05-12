@@ -144,11 +144,11 @@
 <h2>Introduction</h2>
 <p>Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance tradeoff. The lasso is a popular tool for sparse regression, especially for problems in which the
 number of variables <span class="math inline">\(p\)</span> exceeds the number of observations <span class="math inline">\(n\)</span>.</p>
-<p>To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947318300549"><strong>Fabs</strong></a>. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning <span class="math inline">\(\lambda\)</span>，
+<p>To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm <a href="R%20package%20%5BGFabs%5D(https://github.com/XiaoZhangryy/GFabs)"><strong>Fabs</strong></a>. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning <span class="math inline">\(\lambda\)</span>，
 <span class="math display">\[
 L(\beta) + \lambda \sum_j w_j|\beta_j|,
 \]</span>
-where <span class="math inline">\(w=(w_1, \dots, w_p)^\top\)</span> is a vector of prefixed weights. Fabs can handle general loss functions, including both convex and nonconvex loss. It produces statistical guaranteed solutions with asumptions:</p>
+where <span class="math inline">\(w=(w_1, \dots, w_p)^\top\)</span> is a vector of prefixed weights. Fabs can handle general loss functions, including both convex and nonconvex loss. It produces statistical guaranteed solutions (<a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947318300549">CSDA2018</a>) with asumptions:</p>
 <ul>
 <li><p><span class="math inline">\(L(\beta)\)</span> to be differentiable, and</p></li>
 <li><p><span class="math inline">\(\nabla^2 L\preceq M I\)</span>.</p></li>
