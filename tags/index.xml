@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Xingjie Shi</title>
+    <title>Tags on Welcome!</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Xingjie Shi</description>
+    <description>Recent content in Tags on Welcome!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate>
@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>high dimenstion</title>
-      <link>/tags/high-dimenstion/</link>
+      <title>high dimention</title>
+      <link>/tags/high-dimention/</link>
       <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
       
-      <guid>/tags/high-dimenstion/</guid>
+      <guid>/tags/high-dimention/</guid>
       <description></description>
     </item>
     
