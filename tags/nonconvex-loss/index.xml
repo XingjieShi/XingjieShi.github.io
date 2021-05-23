@@ -6,7 +6,7 @@
     <description>Recent content in nonconvex loss on Welcome!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2019 17:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 17:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/nonconvex-loss/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
       <link>/post/2019-03-15-fabs/</link>
-      <pubDate>Thu, 07 Mar 2019 17:13:14 -0500</pubDate>
+      <pubDate>Sun, 17 Mar 2019 17:13:14 -0500</pubDate>
       
       <guid>/post/2019-03-15-fabs/</guid>
       <description>Introduction Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance tradeoff. The lasso is a popular tool for sparse regression, especially for problems in which the number of variables \(p\) exceeds the number of observations \(n\).
