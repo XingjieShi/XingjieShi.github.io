@@ -49,21 +49,21 @@ To minimize a general loss penalized by the adaptive Lasso, we have developed a 
     </item>
     
     <item>
+      <title>个人简介</title>
+      <link>/about/</link>
+      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/about/</guid>
+      <description>史兴杰 南京财经大学，统计系副教授(校聘教授) 国际统计学会推选会员（ISI Elected member） 现场统计研究会环境与资源统计学会理事 研究方向：组学遗</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>/publication/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/publication/</guid>
       <description>Cheng, Qing; Qiu, Tingting; Chai, Xiaoran; Sun, Baoluo; Xia, Yingcun; Shi, Xingjie\(^\ast\); Liu, Jin\(^\ast\); MR-Corr\(^2\): A two-sample Mendelian randomization method that accounts for correlated horizontal pleiotropy using correlated instrumental variants, 2021, R Package Zhang, Xiao; Liu, Xu; Shi, Xingjie\(^\ast\); Model Selection for Varying Coefficient Nonparametric Transformation Model, 2021. R package Shi, Xingjie; Chai, Xiaoran; Yang, Yi; Cheng, Qing; Jiao, Yuling; Chen, Haoyue; Huang, Jian; Yang, Can; Liu, Jin\(^\ast\); A tissue-specific</description>
-    </item>
-    
-    <item>
-      <title>个人简介</title>
-      <link>/about/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/about/</guid>
-      <description>史兴杰 南京财经大学，统计系副教授(校聘教授) 国际统计学会推选会员（ISI Elected member） 现场统计研究会环境与资源统计学会理事 研究方向：组学遗</description>
     </item>
     
   </channel>

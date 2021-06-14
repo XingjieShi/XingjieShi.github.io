@@ -212,6 +212,19 @@ abline(0, 1, lwd=2, col=1)
 legend(&quot;topleft&quot;, c(&quot;jointly&quot;, &quot;seperately&quot;), pch=21, col=3:2)</code></pre>
 <p><img src="/post/2020-03-07-vimco_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 </div>
+<div id="fit-vimco-for-gwas-data-with-multiple-traits" class="section level2">
+<h2>Fit VIMCO for GWAS data with multiple traits</h2>
+<p>To handle GWAS data that is in a <em>PLINK</em> format (incudes sim.bed, sim.bim, sim.fam) directly, <strong>vimco</strong> package provides a function <code>vimco::vimco()</code>, check its help file for more details. Here we provide a simple examples. The following 3 <em>PLINK</em> files are already provided in our packages:</p>
+<ul>
+<li>sim.bed</li>
+<li>sim.bim</li>
+<li>sim.fam</li>
+</ul>
+<pre class="r"><code>path &lt;- system.file(package = &quot;vimco&quot;)
+setwd(path)
+stringname &lt;- &quot;sim&quot;
+tmp &lt;- vimco(stringname, nPheno = 4, fit = TRUE)</code></pre>
+</div>
 </div>
 
     
