@@ -5,11 +5,7 @@
     <link>/tags/css/</link>
     <description>Recent content in css on Welcome!</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>grpFabs</title>
       <link>/project/project2/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in nonconvex loss on Welcome!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 17:13:14 -0500</lastBuildDate>
-    
-	<atom:link href="/tags/nonconvex-loss/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 17 Mar 2019 17:13:14 -0500</lastBuildDate><atom:link href="/tags/nonconvex-loss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
       <link>/post/2019-03-15-fabs/</link>
