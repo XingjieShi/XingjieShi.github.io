@@ -14,7 +14,7 @@
       
       <guid>/post/2019-03-15-fabs/</guid>
       <description>Introduction Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance trade-off. The lasso is a popular tool for sparse regression, especially for problems in which the number of variables \(p\) exceeds the number of observations \(n\).
-To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm [Fabs](R package GFabs. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning \(\lambda\)， \[ L(\beta) + \lambda \sum_j w_j|\beta_j|, \] where \(w=(w_1, \dots, w_p)^\top\) is a vector of prefixed weights.</description>
+To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm Fabs, which is implemented in R package GFabs. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning \(\lambda\)， \[ L(\beta) + \lambda \sum_j w_j|\beta_j|, \] where \(w=(w_1, \dots, w_p)^\top\) is a vector of prefixed weights.</description>
     </item>
     
   </channel>
