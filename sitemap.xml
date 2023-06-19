@@ -1,76 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>/project/project1/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/project/project2/</loc>
-  </url><url>
-    <loc>/tags/gwas/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/high-dimention/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/multiple-traits/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/nsfc-71501089/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/post/2020-03-07-vimco/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2020-03-07T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/adaptive-lasso/</loc>
-    <lastmod>2019-03-17T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/fabs/</loc>
-    <lastmod>2019-03-17T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/post/2019-03-15-fabs/</loc>
-    <lastmod>2019-03-17T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/nonconvex-loss/</loc>
-    <lastmod>2019-03-17T17:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/categories/r/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/about/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/publication/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/project/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/css/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/html/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/js/</loc>
   </url>
+  
 </urlset>

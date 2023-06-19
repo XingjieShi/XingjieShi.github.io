@@ -6,69 +6,10 @@
     <description>Recent content in Tags on Welcome!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GWAS</title>
-      <link>/tags/gwas/</link>
-      <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/gwas/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-    <item>
-      <title>high dimention</title>
-      <link>/tags/high-dimention/</link>
-      <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/high-dimention/</guid>
-      <description></description>
-    </item>
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>multiple traits</title>
-      <link>/tags/multiple-traits/</link>
-      <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/multiple-traits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NSFC 71501089</title>
-      <link>/tags/nsfc-71501089/</link>
-      <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/nsfc-71501089/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>adaptive LASSO</title>
-      <link>/tags/adaptive-lasso/</link>
-      <pubDate>Sun, 17 Mar 2019 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/adaptive-lasso/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fabs</title>
-      <link>/tags/fabs/</link>
-      <pubDate>Sun, 17 Mar 2019 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/fabs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nonconvex loss</title>
-      <link>/tags/nonconvex-loss/</link>
-      <pubDate>Sun, 17 Mar 2019 17:13:14 -0500</pubDate>
-      
-      <guid>/tags/nonconvex-loss/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>go</title>

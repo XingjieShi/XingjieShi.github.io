@@ -6,7 +6,11 @@
     <description>Recent content on Welcome!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2020 17:13:14 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>VIMCO</title>
       <link>/project/project1/</link>
@@ -23,43 +27,6 @@
       
       <guid>/project/project2/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Variational Inference for Multiple Outcomes in GWAS</title>
-      <link>/post/2020-03-07-vimco/</link>
-      <pubDate>Sat, 07 Mar 2020 17:13:14 -0500</pubDate>
-      
-      <guid>/post/2020-03-07-vimco/</guid>
-      <description>Introduction It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome [Rothman et al.,2010]. For jointly modeling multiple correlated outcomes in GWAS, we have developed a statisitcal method in this paper.</description>
-    </item>
-    
-    <item>
-      <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
-      <link>/post/2019-03-15-fabs/</link>
-      <pubDate>Sun, 17 Mar 2019 17:13:14 -0500</pubDate>
-      
-      <guid>/post/2019-03-15-fabs/</guid>
-      <description>Introduction Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance trade-off. The lasso is a popular tool for sparse regression, especially for problems in which the number of variables \(p\) exceeds the number of observations \(n\).
-To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm Fabs, which is implemented in R package GFabs. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning \(\lambda\)， \[ L(\beta) + \lambda \sum_j w_j|\beta_j|, \] where \(w=(w_1, \dots, w_p)^\top\) is a vector of prefixed weights.</description>
-    </item>
-    
-    <item>
-      <title>个人简介</title>
-      <link>/about/</link>
-      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Xingjie Shi (史兴杰), Associate Professor Academy of Statistics and Interdisciplinary Sciences East China Normal University ISI Elected member 现场统计研究会环境与资源统计学会理事 研究方向：组学遗传学数据融合、高维大数据统计计算、生存分析</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>/publication/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/publication/</guid>
-      <description>Liu, Wei; Liao, Xu; Yang, Yi; Lin, Huazhen; Yeong, Joe; Zhou, Xiang\(^\ast\); Shi, Xingjie\(^\ast\); Jin Liu\(^\ast\): Joint dimension reduction and clustering analysis of single-cell RNA-seq and spatial transcriptomics data, \(\underline{Nucleic \space Acids \space Research}\), 2022, gkac219, R Package Zhang, Xiao; Liu, Xu; Shi, Xingjie\(^\ast\); Model Selection for Varying Coefficient Nonparametric Transformation Model, \(\underline{Econometric \space Journal}\), accepted, R Package Yang, Yi\(^\#\); Shi, Xingjie\(^\#\); Zhou, Qiuzhong; Sun, Lei; Yeong, Joe\(^\ast\); Liu, Jin\(^\ast\);</description>
     </item>
     
   </channel>
