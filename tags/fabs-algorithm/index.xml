@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fabs algorithm on Welcome!</title>
+    <link>/tags/fabs-algorithm/</link>
+    <description>Recent content in Fabs algorithm on Welcome!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 17:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/fabs-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fabs for Nonconvex Loss and Adaptive LASSO</title>
+      <link>/post/2019-03-15-fabs/</link>
+      <pubDate>Sun, 17 Mar 2019 17:13:14 -0500</pubDate>
+      
+      <guid>/post/2019-03-15-fabs/</guid>
+      <description>Introduction Sparse regression is a useful technique to do variable selection, and achieve Bias-Variance trade-off. The lasso is a popular tool for sparse regression, especially for problems in which the number of variables \(p\) exceeds the number of observations \(n\).
+To minimize a general loss penalized by the adaptive Lasso, we have developed a new algorithm Fabs, which is implemented in R package GFabs. Specifically, Fabs produces solutions for minimizing following objective function with a sequence of tuning \(\lambda\)， \[ L(\beta) + \lambda \sum_j w_j|\beta_j|, \] where \(w=(w_1, \dots, w_p)^\top\) is a vector of prefixed weights.</description>
+    </item>
+    
+  </channel>
+</rss>
