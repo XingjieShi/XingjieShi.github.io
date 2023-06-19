@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Variational Inference for Multiple Outcomes in GWAS</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.64.1" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Variational Inference for Multiple Outcomes in GWAS</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/publication/">Publications</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:shixingjie0615@gmail.com"><i class="fa fa-fas fa-envelope"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/XingjieShi/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.com/citations?user=XHwX74YAAAAJ&amp;hl=en"><i class="fa fa-graduation-cap"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Variational Inference for Multiple Outcomes in GWAS</h2>
+        <h5>March 7, 2020</h5>
+        
+<a href="/tags/nsfc-71501089"><kbd class="item-tag">NSFC 71501089</kbd></a>
+
+<a href="/tags/high-dimention"><kbd class="item-tag">high dimention</kbd></a>
+
+<a href="/tags/multiple-traits"><kbd class="item-tag">multiple traits</kbd></a>
+
+<a href="/tags/gwas"><kbd class="item-tag">GWAS</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content">
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>It is common to have multiple outcomes of interest in a single study. Usually, these outcomes are analysed separately, ignoring the correlation between them. In high dimensional setting, one would expect that a carefully designed multivariate approach would be a more efficient alternative to individual analyses of each outcome <a href="https://www.tandfonline.com/doi/abs/10.1198/jcgs.2010.09188">[Rothman et al.,2010]</a>. For jointly modeling multiple correlated outcomes in GWAS, we have developed a statisitcal method in this <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext">paper</a>. Here we provide same demonstrations for our method, which is implemented in the R package <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3693/5372680?redirectedFrom=fulltext"><strong>vimco</strong></a>.</p>
+<p>Assume we have measured <span class="math inline">\(q\)</span> responses <span class="math inline">\(y_1, \dots, y_q\)</span> and the same set of <span class="math inline">\(p\)</span> predictors on each individual <span class="math inline">\(x_1,\dots, x_p\)</span>. Each response has its own regression model:
+<span class="math display">\[y_j =  \mathbf X\beta_j + \varepsilon_j, ~ j=1, \dots, p,\]</span>
+where <span class="math inline">\(\beta_j\)</span> is the regression vector for the <span class="math inline">\(j\)</span>th response. We can formulate the multivariate multiple regression model as follows:
+<span class="math display">\[\mathbf Y = \mathbf X \mathbf B + \mathbf E,\]</span>
+where <span class="math inline">\(\mathrm E(\mathbf E)=0\)</span>, and <span class="math inline">\(\mathrm {Var}(\mathbf E)=\Sigma\)</span>.</p>
+</div>
+<div id="simulate-high-dimensional-data" class="section level2">
+<h2>Simulate high dimensional data</h2>
+<p>You can simulate a simple example with following R code:</p>
+<pre class="r"><code>AR = function(rho, p) {
+    outer(1:p, 1:p, FUN = function(x, y) rho^(abs(x - y))) 
+}
+library(mvtnorm)
+n = 300  # sample size
+p = 400  # dimension of predictors
+K = 5    # dimension of outcomes
+set.seed(20132014)
+X   = rmvnorm(n, mean=rep(0, p))
+sigma.beta = rep(1, K)
+
+bet = matrix(0, nrow = p, ncol = K)
+lambda = 0.15    # proportion of non-zero entries in matrix \beta
+eta = rbinom(p, 1, lambda)
+alpha = 1
+gam = matrix(rbinom(p*K, 1, alpha), ncol=K)
+for (k in 1:K){
+  bet[, k] = rnorm(p, mean = 0, sd = sigma.beta[k]) * gam[,k] * eta 
+}
+  
+sigma = AR(0.8, K)
+lp  = X %*% bet
+sigma.e = diag(sqrt(diag(var(lp)))) %*% sigma %*% diag(sqrt(diag(var(lp))))
+err = rmvnorm(n, rep(0, K), sigma.e)
+Y   = lp + err
+print(round(cor(Y),2))
+##      [,1] [,2] [,3] [,4] [,5]
+## [1,] 1.00 0.39 0.25 0.11 0.20
+## [2,] 0.39 1.00 0.35 0.29 0.25
+## [3,] 0.25 0.35 1.00 0.44 0.23
+## [4,] 0.11 0.29 0.44 1.00 0.42
+## [5,] 0.20 0.25 0.23 0.42 1.00</code></pre>
+</div>
+<div id="fit-each-outcome-seperately" class="section level2">
+<h2>Fit each outcome seperately</h2>
+<pre class="r"><code>library(vimco)
+fit_Ind = emInd(X, Y)</code></pre>
+</div>
+<div id="fit-all-outcomes-jointly" class="section level2">
+<h2>Fit all outcomes jointly</h2>
+<pre class="r"><code># initial values
+p = ncol(X)
+mu0     = fit_Ind$mu
+sigb0   = fit_Ind$sigb
+Theta0  = matrix(0, nrow=ncol(Y), ncol=ncol(Y))
+diag(Theta0)  =   1/c(fit_Ind$sige)
+Lambda0 = rep(1, p)
+Alpha0  = fit_Ind$Alpha 
+lambda0 = 1
+#fit_Mul = emMultiple(X, Y)
+fit_Mul = emMultiple(X, Y, mu0, sigb0, Theta0, Lambda0, Alpha0, TRUE) </code></pre>
+</div>
+<div id="compare-results" class="section level2">
+<h2>Compare results</h2>
+<pre class="r"><code>plot(bet, fit_Ind$Beta, xlab = &quot;ture beta&quot;, ylab = &quot;estimate&quot;, col=2)
+points(bet, fit_Mul$Beta, col=3)
+abline(0, 1, lwd=2, col=1)
+legend(&quot;topleft&quot;, c(&quot;jointly&quot;, &quot;seperately&quot;), pch=21, col=3:2)</code></pre>
+<p><img src="/post/2020-03-07-vimco_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="fit-vimco-for-gwas-data-with-multiple-traits" class="section level2">
+<h2>Fit VIMCO for GWAS data with multiple traits</h2>
+<p>To handle GWAS data that is in a <em>PLINK</em> format (incudes sim.bed, sim.bim, sim.fam) directly, <strong>vimco</strong> package provides a function <code>vimco::vimco()</code>, check its help file for more details. Here we provide a simple examples. The following 3 <em>PLINK</em> files are already provided in our packages:</p>
+<ul>
+<li>sim.bed</li>
+<li>sim.bim</li>
+<li>sim.fam</li>
+</ul>
+<pre class="r"><code>path &lt;- system.file(package = &quot;vimco&quot;)
+setwd(path)
+stringname &lt;- &quot;sim&quot;
+tmp &lt;- vimco(stringname, nPheno = 4, fit = TRUE)</code></pre>
+</div>
+</div>
+
+    
+    
+    
+        <h4 class="page-header">Related</h4>
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-03-15-fabs/">Fabs for Nonconvex Loss and Adaptive LASSO</a></h4>
+    <h5>March 17, 2019</h5>
+    
+<a href="/tags/nsfc-71501089"><kbd class="item-tag">NSFC 71501089</kbd></a>
+
+<a href="/tags/fabs"><kbd class="item-tag">Fabs</kbd></a>
+
+<a href="/tags/nonconvex-loss"><kbd class="item-tag">nonconvex loss</kbd></a>
+
+<a href="/tags/adaptive-lasso"><kbd class="item-tag">adaptive LASSO</kbd></a>
+
+
+
+</div>
+ 
+    
+
+    
+    
+        <h4 class="page-header">Comments</h4>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Xingjie" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+
